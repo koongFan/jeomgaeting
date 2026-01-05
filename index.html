@@ -293,6 +293,167 @@
             box-shadow: 0 20px 60px rgba(63, 191, 143, 0.1);
         }
 
+        /* 철학 섹션 */
+        .philosophy {
+            padding: 100px 24px;
+            background: #0A0A0A;
+        }
+
+        .philosophy-content {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .philosophy-headline {
+            font-size: clamp(24px, 6vw, 32px);
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .philosophy-headline span {
+            color: #3FBF8F;
+        }
+
+        .philosophy-subline {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+        }
+
+        .philosophy-text {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+
+        .philosophy-text strong {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+        }
+
+        .philosophy-highlight {
+            background: rgba(63, 191, 143, 0.08);
+            border-left: 3px solid #3FBF8F;
+            padding: 24px;
+            border-radius: 0 16px 16px 0;
+            margin-top: 32px;
+        }
+
+        .philosophy-highlight p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .philosophy-highlight p:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        .philosophy-highlight strong {
+            color: #3FBF8F;
+        }
+
+        /* 타겟 섹션 */
+        .target {
+            padding: 100px 24px;
+            background: #0A0A0A;
+        }
+
+        .target-container {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .target-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            padding: 32px 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .target-box:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .target-box.fit {
+            border-color: rgba(63, 191, 143, 0.3);
+        }
+
+        .target-box.fit:hover {
+            border-color: rgba(63, 191, 143, 0.5);
+        }
+
+        .target-box.not-fit {
+            border-color: rgba(255, 255, 255, 0.06);
+        }
+
+        .target-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .target-emoji {
+            font-size: 24px;
+        }
+
+        .target-title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .target-box.fit .target-title {
+            color: #3FBF8F;
+        }
+
+        .target-box.not-fit .target-title {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .target-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .target-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+        }
+
+        .target-item-icon {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            margin-top: 1px;
+        }
+
+        .target-box.fit .target-item-icon {
+            background: rgba(63, 191, 143, 0.15);
+            color: #3FBF8F;
+        }
+
+        .target-box.not-fit .target-item-icon {
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
         .solution h2 {
             font-size: clamp(28px, 7vw, 36px);
             font-weight: 800;
@@ -573,6 +734,32 @@
         </div>
     </section>
 
+    <!-- 철학 섹션 -->
+    <section class="philosophy">
+        <div class="philosophy-content">
+            <h2 class="philosophy-headline fade-up">우리는 <span>완벽한 프로필</span>을<br>믿지 않습니다</h2>
+            <p class="philosophy-subline fade-up">대신, 짧은 만남을 믿습니다.</p>
+
+            <p class="philosophy-text fade-up">
+                사람은 누구나 자신을 포장할 수 있습니다.<br>
+                사진도, 말도, 프로필도 얼마든지 꾸밀 수 있죠.
+            </p>
+
+            <p class="philosophy-text fade-up">
+                하지만 <strong>점심 한 끼를 함께하는 시간</strong>은 다릅니다.<br>
+                대화의 태도, 식사 매너, 시간에 대한 존중.<br>
+                그 안에는 숨길 수 없는 가치관이 드러납니다.
+            </p>
+
+            <div class="philosophy-highlight fade-up">
+                <p>점개팅은 <strong>하루 단위</strong>로 참여하고,</p>
+                <p><strong>오늘 만날 사람만</strong> 보여주는 소개팅입니다.</p>
+                <p>유령회원도, 끝없는 채팅도 없습니다.</p>
+                <p>부담 없는 만남으로 <strong>스스로 판단</strong>하세요.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- 프로세스 섹션 -->
     <section class="process">
         <div class="container">
@@ -636,6 +823,70 @@
                     <div class="trust-icon">⏰</div>
                     <h4>14시 자동 종료</h4>
                     <p>질질 끌 일 없음</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 타겟 섹션 -->
+    <section class="target">
+        <div class="target-container">
+            <span class="section-label fade-up">For you?</span>
+            <h2 class="section-title fade-up">나한테 맞을까?</h2>
+
+            <!-- 맞는 분 -->
+            <div class="target-box fit fade-up">
+                <div class="target-header">
+                    <span class="target-emoji">✅</span>
+                    <h3 class="target-title">이런 분께 맞아요</h3>
+                </div>
+                <div class="target-list">
+                    <div class="target-item">
+                        <span class="target-item-icon">✓</span>
+                        <span>퇴근 후·주말 데이트가 부담스러운 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">✓</span>
+                        <span>채팅 오래 하는 게 피곤한 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">✓</span>
+                        <span>한 번 만나보고 빠르게 판단하고 싶은 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">✓</span>
+                        <span>시간과 감정 낭비가 싫은 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">✓</span>
+                        <span>가벼운 만남 속에서도 예의를 중요시하는 분</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 안 맞는 분 -->
+            <div class="target-box not-fit fade-up">
+                <div class="target-header">
+                    <span class="target-emoji">🤔</span>
+                    <h3 class="target-title">이런 분께는 안 맞을 수도</h3>
+                </div>
+                <div class="target-list">
+                    <div class="target-item">
+                        <span class="target-item-icon">—</span>
+                        <span>채팅으로 관계를 오래 쌓고 싶은 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">—</span>
+                        <span>항상 누군가와 연결되어 있고 싶은 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">—</span>
+                        <span>당장 진한 연애를 원하시는 분</span>
+                    </div>
+                    <div class="target-item">
+                        <span class="target-item-icon">—</span>
+                        <span>프로필 꾸미기에 더 집중하고 싶은 분</span>
+                    </div>
                 </div>
             </div>
         </div>
